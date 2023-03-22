@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>
+			Bucket Sort Visualization
+		</title>
+		
+		<!-- css sheet for how the page is laid out -->
+		
+		<link rel="stylesheet" href="./css/visualizationPageStyle.css">
+			
+			
+		<!-- jqueury stuff.  Only used for the animation speed slider. -->
+		<link rel="stylesheet" href="./css/jquery-ui-1.8.11.custom.css">
+				
+		<script src="./script/jquery-1.5.2.min.js"></script>
+		<script src="./script/jquery-ui-1.8.11.custom.min.js"></script>
+				
+		<!-- Javascript for the actual visualization code -->
+		<script type = "text/javascript" src = "./script/CustomEvents.js"> </script>
+		<script type = "text/javascript" src = "./script/UndoFunctions.js"> </script>
+		<script type = "text/javascript" src = "./script/AnimatedObject.js"> </script>
+		<script type = "text/javascript" src = "./script/AnimatedLabel.js"> </script>
+		<script type = "text/javascript" src = "./script/AnimatedCircle.js"> </script>
+		<script type = "text/javascript" src = "./script/AnimatedRectangle.js"> </script>
+		<script type = "text/javascript" src = "./script/AnimatedLinkedList.js"> </script>
+		<script type = "text/javascript" src = "./script/HighlightCircle.js"> </script>
+		<script type = "text/javascript" src = "./script/Line.js"> </script>
+		<script type = "text/javascript" src = "./script/ObjectManager.js"> </script>
+		<script type = "text/javascript" src = "./script/AnimationMain.js"> </script>
+		<script type = "text/javascript" src = "./script/Algorithm.js"> </script>
+		<script type = "text/javascript" src = "./script/BucketSort.js"> </script> 
+				
+			
+	 </head> 
+	
+	<body onload="init();" class="VisualizationMainPage">
+		
+		<div id = "container">
+			
+			<div id="header">  
+				<h1>Buket Sıralaması</h1>
+
+
+			</div>
+			<div class="bucketnedir">
+				<p>
+				Buket sıralaması veya kutu sıralaması (bin sorting) isimleri verilen bu arama yöntemi öncelikle arama yapılacak olan sayıları (veya anahtarları) buketlere böler. Daha sonra her buketi kendi içinde sıralar (veya buket sıralama algoritmasını özyineli olarak (recursive) buketlerin üzerine uygulamaya devam eder) Buketler sıralandıktan sonra birleştirme aşamasına geçilir ve buketler birleştirildiğinde sıralama işlemi tamamlanmış olur.</p>
+			</div>
+			
+			<div = id = "mainContent"> 
+				
+					
+				<canvas id="canvas" width="1000" height="500"  ></canvas>
+				
+			</div> 
+			
+			<div id = "algoControlSection" style="float: left;">
+				<table id="AlgorithmSpecificControls"> 
+				</table> 
+			</div>
+			<div id = "generalAnimationControlSection">
+				<table id="GeneralAnimationControls">  
+				</table>		
+			</div>
+
+			
+
+		</div>
+		<script type="text/javascript">
+		
+			var hizbari=document.getElementsByClassName("ui-slider-handle");
+			
+		</script>
+	</body>
+</html>
